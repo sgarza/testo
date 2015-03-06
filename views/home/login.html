@@ -1,0 +1,9 @@
+<h3>Login Form</h3>
+<form method="post" action="/login">
+  <input placeholder="email" type="email" name="email" autofocus /> <br />
+  <input placeholder="password" type="password" name="password" /> <br />
+  <input type="hidden" name="_csrf" value="<%= csrfToken %>" />
+
+  <button>Login</button>
+
+</form>

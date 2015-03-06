@@ -1,0 +1,8 @@
+<h3>Edit user</h3>
+<form method="post" action="/user/<%= user.id %>">
+    <input type="text" name="name" placeholder="name" value="<%= user.name %>"/><br />
+    <input type="text" name="email" placeholder="email" value="<%= user.email %>" /> <br />
+    <input type="password" name="password" placeholder="password" /><br />
+    <input type="hidden" name="_csrf" value="<%= csrfToken %>" />
+    <button>Edit User</button>
+</form>
